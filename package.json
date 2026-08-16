@@ -1,0 +1,16 @@
+{
+  "name": "jet-huruf",
+  "version": "1.0.0",
+  "description": "Game pesawat tempur untuk anak belajar mengenal huruf — kemudi pakai gyroscope HP.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/main.js --bundle --minify --format=esm --target=es2019 --outfile=game.js --legal-comments=none",
+    "dev": "esbuild src/main.js --bundle --format=esm --target=es2019 --outfile=game.js --sourcemap --watch",
+    "serve": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "three": "^0.180.0"
+  }
+}
